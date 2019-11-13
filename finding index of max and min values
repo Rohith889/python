@@ -1,0 +1,12 @@
+n=int(input())
+m=list(map(int,input().split()))
+i=1
+k=min(m)
+g=max(m)
+for i in range(n):
+  if(k==m[i]):
+    j=i
+  if(g==m[i]):
+    p=i
+print(j,p)
+  
