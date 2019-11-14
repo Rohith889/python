@@ -1,0 +1,6 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=a[0] 
+for i in range(len(a)):
+    k=k&a[i]
+print(k)
