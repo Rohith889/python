@@ -1,0 +1,13 @@
+n=int(input())
+m=list(map(int,input().split()))
+a=min(m)
+b=max(m)
+for i in range(len(m)):
+     if(m[i]==a):
+        k=i
+        break;
+for j in range(len(m)):
+    if(m[j]==b):
+       l=j
+       break;
+print(l-k)
