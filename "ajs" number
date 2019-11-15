@@ -1,0 +1,23 @@
+n=input()
+k=[]
+for i in n:
+  k.append(i)
+p=int(k[0])+int(k[1])
+l=[]
+count=0
+for i in str(p):
+  l.append(i)
+for i in range(len(k)):
+    for j in range(len(l)):
+        if(l[j]==k[i]):
+            count=count+1
+        else:
+           count=0
+if(count==0):
+    print("0")
+else:
+    print("1")
+    
+  
+
+  
