@@ -1,0 +1,12 @@
+n=input()
+k=[]
+sum=0
+for i in n:
+   k.append(i)
+for i in range(len(k)):
+   sum=sum+int(k[i])
+if(sum%3==0):
+   print("Yes")
+else:
+   print("Not")
+
