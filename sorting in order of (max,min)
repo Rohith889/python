@@ -1,11 +1,15 @@
 n=list(map(int,input().split()))
 k=[]
-for i in range(len(n)):
-    if(len(n)!=0):
+for i in range(len(n)):        
+    if(len(n)!=0 and len(n)>1):
         k.append(max(n))
         n.remove(max(n))
         k.append(min(n))
         n.remove(min(n))
     else:
         break
-print(k)
+if(len(n)==0):
+    print(k)
+else:
+    k.append(*n)
+    print(k)
