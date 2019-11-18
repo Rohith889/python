@@ -1,0 +1,9 @@
+n=input()
+k=[]
+power=0
+for i in n:
+    k.append(i)
+for i in range(len(k)):
+    power=power+pow(int(k[i]),len(k))
+print(power)
+
