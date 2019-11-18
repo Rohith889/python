@@ -1,0 +1,15 @@
+n=int(input())
+m=list(map(int,input().split()))
+a=max(m)
+b=min(m)
+count=0
+e=0
+for i in range(len(m)):
+    if(m[i]==a):
+        count=i
+        break
+for j in range(len(m)):
+    if(m[j]==b):
+        e=j
+        break
+print(count-e)
