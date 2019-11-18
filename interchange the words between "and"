@@ -1,0 +1,15 @@
+a=list(input().split())
+s=""
+for i in range (len(a)):
+    if("and"==(a[i])):
+        c=a[i-1]
+        a[i-1]=a[i+1]
+        a[i+1]=c
+for i in a:
+    s=s+" "+i
+    if(s==" "+i):
+        s=i
+print(s)
+    
+        
+        
