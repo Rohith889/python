@@ -1,0 +1,17 @@
+n,m=list(input().split())
+k=[]
+j=[]
+s=""
+for i  in n:
+    k.append(i)
+for i in range(int(m)-1,len(k),int(m)):
+    j.append(k[i].capitalize())
+for i in range(int(m)-1,len(k),int(m)):
+    for q in range(len(j)):
+        k[i]=j[q]
+        j.remove(j[q])
+        break
+for i in k:
+    s=s+i
+print(s)
+    
