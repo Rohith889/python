@@ -1,0 +1,10 @@
+n,m=[int(i) for i in input().split()]
+a=list(map(int,input().split()))
+a.sort()
+a.reverse()
+c=[]
+if(n>=m):
+    for i in range(m):
+      c.append(a[i])
+print(min(c))
+   
