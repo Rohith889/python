@@ -1,0 +1,22 @@
+n=int(input())
+m=list(map(int,input().split()))
+k=[]
+s=""
+for i in range(len(m)):
+  if(m[i]==i):
+    k.append(i)
+if(len(k)!=0):
+  for i in k:
+      s=s+" "+str(i)
+      if(s==" "+str(i)):
+          s=str(i)
+if(s!=""):
+    print(s)
+else:
+    print("-1")
+
+    
+    
+    
+    
+    
