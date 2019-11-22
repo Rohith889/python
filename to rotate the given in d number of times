@@ -1,0 +1,15 @@
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+k=0
+s=""
+for i in range(m):
+    k=a[0]
+    a.remove(a[0])
+    a.append(k)
+    k=0
+for i in range(len(a)):
+    s=s+" "+str(a[i])
+    if(s==" "+str(a[i])):
+        s=str(a[i])
+print(s)
+    
