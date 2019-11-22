@@ -1,0 +1,16 @@
+n=input()
+k=[]
+a=[]
+s=""
+for i in n:
+    k.append(i)
+for i in range(len(k)-1,0,-1):
+    a.append(k[i])
+a.append((k[0]))
+for i in range(len(a)):
+    if(i==0):
+        s+=str((a[i]).upper())
+    else:
+        s+=str(a[i])
+    
+print(s)
