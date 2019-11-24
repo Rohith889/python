@@ -1,0 +1,22 @@
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+k=[]
+q=[]
+s=""
+for i in range(m):
+    k.append(a[i])
+    k.sort()
+for i in range(m,len(a),1):
+    q.append(a[i])
+    q.sort()
+    q.reverse()
+for i in range(len(q)):
+    k.append(q[i])
+for i in range(len(k)):
+    s=s+" "+str(k[i])
+    if(s==" "+str(k[i])):
+        s=str(k[i])
+print(s)
+
+    
+    
