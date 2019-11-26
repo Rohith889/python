@@ -1,0 +1,5 @@
+n=input()
+k=[]
+for i in n:
+  k.append(i)
+print(len(k))
