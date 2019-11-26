@@ -1,0 +1,16 @@
+n=input()
+k=[]
+s=""
+count=0
+for i in n:
+  k.append(i)
+for i in range(len(k)):
+   if(int(k[i])%2!=0):
+      s=s+" "+k[i];
+      count=count+1
+      if(s==" "+k[i]):
+        s=k[i]
+if(count!=0):
+   print(s)
+else:
+   print("-1")
