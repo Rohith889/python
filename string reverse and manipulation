@@ -1,0 +1,10 @@
+n=int(input())
+a=list(map(int,input().split()))
+a.reverse()
+s=""
+if(1<=n<=10000):
+   for i in range(len(a)):
+      s=s+"->"+str(a[i])
+      if(s=="->"+str(a[i])):
+          s=str(a[i])
+print(s)
